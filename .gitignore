@@ -1,0 +1,7 @@
+# Node
+
+node_modules
+
+# Exeptions
+
+!node_modules/socket.io-client/LICENCE
