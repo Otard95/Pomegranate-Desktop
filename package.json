@@ -2,14 +2,25 @@
   "name": "Pomegranate",
   "version": "0.0.1",
   "description": "Desktop applications of my web game Pomegranate-clicker",
-  "main": "index.js",
+  "main": "./main.js",
+  "scripts": {
+    "start": "gulp --gulpfile ./.o/gulpfile.js && electron ./main.js",
+    "pack-all": "gulp --gulpfile ./.o/gulpfile.js && electron-packager . Pomegranate --overwrite --out ../release-builds/Pomegranate --asar=true --platform=win32,linux --arch=all --packageManager=yarn --prune=true",
+    "pack-win": "gulp --gulpfile ./.o/gulpfile.js && electron-packager . Pomegranate --overwrite --out ../release-builds/Pomegranate --asar=true --platform=win32 --arch=all --packageManager=yarn --prune=true",
+    "pack-test": "gulp --gulpfile ./.o/gulpfile.js && electron-packager . Pomegranate --overwrite --out ../builds/Pomegranate --packageManager=yarn --prune=true"
+  },
   "repository": "https://github.com/Otard95/Pomegranate-Desktop",
   "author": "Stian Myklebostad",
   "license": "MIT",
   "dependencies": {
+    "jquery": "^3.2.1",
     "socket.io": "^2.0.2"
   },
   "devDependencies": {
-    "electron": "^1.6.10"
+    "electron": "^1.6.10",
+    "gulp": "^3.9.1",
+    "gulp-pug2": "^0.0.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0"
   }
 }

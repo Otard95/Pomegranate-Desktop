@@ -2,6 +2,14 @@
 
 node_modules
 
+# Yarn
+
+yarn.lock
+
+# Builds
+
+builds
+
 # Exeptions
 
 !node_modules/socket.io-client/LICENCE

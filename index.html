@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="./">
+    <title></title>
+    <link link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/main.min.css">
+    <link rel="stylesheet" href="./assets/css/nav.min.css">
+    <link rel="stylesheet" href="./assets/css/home.min.css">
+    <script>require('./renderer.js');</script>
+  </head>
+  <body>
+    <div class="overlay">
+      <div class="msgBox rel">
+        <div class="closeBtn"></div>
+        <h1 class="title">Title here</h1>
+        <hr>
+        <p class="msg">msg goes here</p>
+      </div>
+    </div>
+    <nav>
+      <h3>Pomegranate</h3>
+    </nav>
+  </body>
+  <div class="preGame row v-centre h-centre">
+    <div class="menuBox">
+      <h1 class="rel">Pomegranate<span>Fruity Clicker</span></h1>
+      <div class="msgBox"></div>
+      <input id="pNameIn" type="text" placeholder="New Player" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      <input id="playBtn" type="button" value="Play!">
+    </div>
+  </div>
+  <div class="game row">
+    <div class="col c2 sep">
+      <div class="overview"><img class="pomegranate" src="./assets/imgs/pomegranate.png" alt="Clickable pomegranate" id="pomegranate">
+        <hr>
+        <div class="row">
+          <div class="col c1">
+            <h2 class="seeds textCenter">Seeds</h2>
+            <div class="textCenter" id="seedCounter">0</div>
+          </div>
+          <div class="col c1">
+            <h2 class="sps textCenter">SPS</h2>
+            <div class="textCenter" id="spsCounter">0</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col c2">
+      <div class="upgrades">
+        <h2>Upgrades</h2>
+        <div class="row">
+          <div class="col c3 upgrade" id="deseeder">
+            <div class="purchase">
+              <div class="buyBtn">Buy</div>
+            </div>
+            <div class="info"><img class="icon" src="assets/imgs/upgrades/imgName.png">
+              <h3 class="title">title</h3>
+              <div class="row">
+                <div class="c2">Level</div>
+                <div class="c2 lvl">0</div>
+              </div>
+              <div class="row">
+                <div class="c2">SPS</div>
+                <div class="c2 sps">0</div>
+              </div>
+              <div class="row">
+                <div class="c2">Cost</div>
+                <div class="c2 cost">0</div>
+              </div>
+            </div>
+          </div>
+          <div class="col c3 upgrade" id="backyardShrub">
+            <div class="purchase">
+              <div class="buyBtn">Buy</div>
+            </div>
+            <div class="info"><img class="icon" src="assets/imgs/upgrades/imgName.png">
+              <h3 class="title">title</h3>
+              <div class="row">
+                <div class="c2">Level</div>
+                <div class="c2 lvl">0</div>
+              </div>
+              <div class="row">
+                <div class="c2">SPS</div>
+                <div class="c2 sps">0</div>
+              </div>
+              <div class="row">
+                <div class="c2">Cost</div>
+                <div class="c2 cost">0</div>
+              </div>
+            </div>
+          </div>
+          <div class="col c3 upgrade" id="backyardTree">
+            <div class="purchase">
+              <div class="buyBtn">Buy</div>
+            </div>
+            <div class="info"><img class="icon" src="assets/imgs/upgrades/imgName.png">
+              <h3 class="title">title</h3>
+              <div class="row">
+                <div class="c2">Level</div>
+                <div class="c2 lvl">0</div>
+              </div>
+              <div class="row">
+                <div class="c2">SPS</div>
+                <div class="c2 sps">0</div>
+              </div>
+              <div class="row">
+                <div class="c2">Cost</div>
+                <div class="c2 cost">0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</html>
